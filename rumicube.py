@@ -352,8 +352,8 @@ while(nombrePartie > tourTOTALE):
 	if((TestptsCouleur(J1) + Testchiffrecons(J1)) >= 30):
 		tourCOMMENCER = tourCOMMENCER + 1
 
-
-	print(round(((tourTOTALE/nombrePartie)*100),2))
+	if((tourTOTALE/1000) == int(tourTOTALE/1000)):
+		print(round(((tourTOTALE/nombrePartie)*100),2),"%")
 																		#assemblage des données dans le graphique
 	listeYaffichage.append(tourCOMMENCER/tourTOTALE)
 	resultats = tourCOMMENCER/tourTOTALE
